@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>नेटे भाई बिरयानी कॉर्नर - Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .spice-dust {
+            background-image: radial-gradient(#8b4b00 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.03;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 40px -15px rgba(47, 47, 46, 0.06);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#664b00",
+                    "primary-dim": "#7a4100",
+                    "surface-container-low": "#f3f0ef",
+                    "tertiary-container": "#f69a62",
+                    "surface-tint": "#8b4b00",
+                    "tertiary-fixed-dim": "#e68d56",
+                    "surface-container-high": "#e4e2e1",
+                    "on-secondary": "#fff1db",
+                    "on-surface-variant": "#5c5b5b",
+                    "on-primary-fixed": "#291200",
+                    "error-container": "#f95630",
+                    "on-error": "#ffefec",
+                    "on-secondary-container": "#5c4400",
+                    "surface-container": "#eae7e7",
+                    "on-secondary-fixed": "#443100",
+                    "on-error-container": "#520c00",
+                    "tertiary": "#8f4816",
+                    "surface-variant": "#dfdcdc",
+                    "error-dim": "#b92902",
+                    "outline": "#787676",
+                    "primary-container": "#fe9832",
+                    "error": "#b02500",
+                    "tertiary-fixed": "#f69a62",
+                    "on-tertiary-fixed-variant": "#602900",
+                    "secondary-fixed-dim": "#f7ba00",
+                    "on-background": "#2f2f2e",
+                    "on-primary": "#fff0e6",
+                    "surface-dim": "#d6d4d3",
+                    "inverse-on-surface": "#9e9c9c",
+                    "secondary-fixed": "#ffca4d",
+                    "tertiary-dim": "#803d0a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#674c00",
+                    "primary-fixed": "#fe9832",
+                    "on-primary-fixed-variant": "#592e00",
+                    "secondary": "#755700",
+                    "on-tertiary-container": "#532300",
+                    "on-tertiary-fixed": "#2d0f00",
+                    "surface": "#f9f6f5",
+                    "on-surface": "#2f2f2e",
+                    "secondary-container": "#ffca4d",
+                    "on-tertiary": "#fff0e9",
+                    "surface-bright": "#f9f6f5",
+                    "background": "#f9f6f5",
+                    "surface-container-highest": "#dfdcdc",
+                    "inverse-surface": "#0e0e0e",
+                    "primary": "#8b4b00",
+                    "outline-variant": "#afadac",
+                    "primary-fixed-dim": "#ed8b24",
+                    "on-primary-container": "#4d2700",
+                    "inverse-primary": "#fe9832"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Be Vietnam Pro"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f6f5]/80 backdrop-blur-xl shadow-[0_12px_40px_-15px_rgba(47,47,46,0.06)] h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="text-2xl font-black text-[#8b4b00] font-headline tracking-tight">
+                नेटे भाई बिरयानी कॉर्नर
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#2f2f2e] opacity-70 font-headline font-bold hover:text-[#8b4b00] transition-colors" href="#">Home</a>
+<a class="text-[#8b4b00] border-b-2 border-[#8b4b00] pb-1 font-headline font-bold" href="#">Menu</a>
+<a class="text-[#2f2f2e] opacity-70 font-headline font-bold hover:text-[#8b4b00] transition-colors" href="#">Booking</a>
+<div class="flex items-center gap-4 ml-4">
+<button class="p-2 text-[#8b4b00]">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<a class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-xl font-headline font-bold active:scale-95 transition-transform duration-200" href="tel:9511179974">Order Now</a>
+</div>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-[#8b4b00] text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative pt-20 pb-32">
+<!-- Texture Overlay -->
+<div class="absolute inset-0 spice-dust pointer-events-none"></div>
+<!-- Hero Section / Header -->
+<header class="max-w-7xl mx-auto px-6 pt-16 pb-12 relative">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 opacity-[0.03] text-[18rem] font-black font-headline whitespace-nowrap pointer-events-none select-none">
+                नेटे भाई
+            </div>
+<div class="relative z-10 text-center md:text-left max-w-2xl">
+<span class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Traditional Recipes</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline text-on-surface leading-[0.9] tracking-tighter mb-8">
+                    The <span class="text-primary-container">Artisanal</span><br/>Menu.
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Slow-cooked perfection using heritage spice blends and premium long-grain Basmati. Every bite tells the story of Gorakhpur’s finest culinary tradition.
+                </p>
+</div>
+</header>
+<!-- Category: Signature Biriyani -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-4xl font-black font-headline text-on-surface tracking-tight">Signature Biriyani</h2>
+<div class="flex-grow h-[1px] bg-outline-variant/30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Biriyani Item 1 -->
+<div class="group relative bg-surface-container-low rounded-[2rem] overflow-hidden p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
+<div class="relative h-64 mb-8 overflow-hidden rounded-2xl">
+<img alt="Signature Chicken Biriyani" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of steaming hot chicken biriyani with long grain rice and fresh coriander served in a traditional clay pot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFR_jdfuI3k93bqNjNvfD7bgVsk7D9_uvtkMcn2K8XTaS-nXATrV6YPErhZYkdy_U7ctNhanKIcRUOutLwkjrut5qa2leJPRQh0LH9CBxMpzAG9u3-by8_h1Ii6Q-ypIfV01QK3Et1Wc-VxwbksdHrPSpxcI6oWYW1vwEtvLDWxaA0hjHC37E31Rf3S9YmG5AynZB9RvGfMRWANOylBS86RxT82Vc96EkkXyDKktsj-Pm1GxDeriLRcaGgNRXdMTsLypY51BrwTCnE"/>
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-container font-bold px-4 py-2 rounded-xl shadow-lg">
+                            ₹110
+                        </div>
+</div>
+<div class="relative">
+<h3 class="text-2xl font-bold font-headline mb-3">Signature Chicken Biriyani</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A masterpiece of flavor. Tender chicken pieces marinated overnight in our secret spice blend, layered with fragrant rice.</p>
+<a class="flex items-center justify-between w-full bg-surface-container-lowest border border-primary/10 px-6 py-4 rounded-xl group-hover:bg-primary-container group-hover:text-on-primary-container transition-all duration-300" href="https://wa.me/9511179974?text=I'd like to order Signature Chicken Biriyani">
+<span class="font-bold">Add to Order</span>
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+</div>
+<!-- Biriyani Item 2 -->
+<div class="group relative bg-surface-container-low rounded-[2rem] overflow-hidden p-6 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5">
+<div class="relative h-64 mb-8 overflow-hidden rounded-2xl">
+<img alt="Heritage Veg Biriyani" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Artisanal vegetable biriyani with visible roasted spices, paneer cubes, and colorful vegetables on a ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDB1r1mTYkzCkQ3wRXyVjY4LVEBtJ4VRQ7VsdvhQddYFWvRJqFSlnDpgIKn85G30ErmtcY_76hJwFXU_Ya3xLnDgoXrHhRkNBWJsWv1RtmoLOfxsdNGlIFZZbh22mbcfzbQhREzegBNJARMVFKxr95vYbFlgYor0x_334Fs9--hxZdd7kUX_OV0YxbHIW7XQlcgEtmfsZBD5j-dJ5OVvGT_XqDD-6bKXxYrhKz8wzXmvoZ_YtZpXOpPZRVWM6DWtqMNXOSIkvgAHVk"/>
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary-container font-bold px-4 py-2 rounded-xl shadow-lg">
+                            ₹110
+                        </div>
+</div>
+<div class="relative">
+<h3 class="text-2xl font-bold font-headline mb-3">Heritage Veg Biriyani</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Garden fresh seasonal vegetables cooked dum-style with our artisanal saffron-infused spice mix.</p>
+<a class="flex items-center justify-between w-full bg-surface-container-lowest border border-primary/10 px-6 py-4 rounded-xl group-hover:bg-primary-container group-hover:text-on-primary-container transition-all duration-300" href="https://wa.me/9511179974?text=I'd like to order Heritage Veg Biriyani">
+<span class="font-bold">Add to Order</span>
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</a>
+</div>
+</div>
+<!-- Featured Text Block -->
+<div class="flex flex-col justify-center p-8 bg-primary/5 rounded-[2rem] border-2 border-dashed border-primary/20">
+<span class="text-primary font-bold mb-2">Did you know?</span>
+<h4 class="text-2xl font-bold font-headline text-primary mb-4 leading-tight">Our Biriyani is Dum-Cooked for 4 Hours.</h4>
+<p class="text-on-surface-variant text-sm">We use traditional clay vessels to seal the steam, ensuring every grain of rice absorbs the deep mahogany spices of Nate Bhai's kitchen.</p>
+</div>
+</div>
+</section>
+<!-- Category: Crispy Starters -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-12">
+<div class="max-w-md">
+<h2 class="text-4xl font-black font-headline text-on-surface tracking-tight mb-4">Crispy Starters</h2>
+<p class="text-on-surface-variant">The perfect crunch to ignite your palate before the main course.</p>
+</div>
+<div class="hidden md:block flex-grow h-[1px] bg-outline-variant/30 ml-8 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Starter Item 1 -->
+<div class="flex flex-col sm:flex-row bg-surface-container-lowest rounded-[2.5rem] overflow-hidden editorial-shadow group">
+<div class="w-full sm:w-1/2 h-64 sm:h-auto overflow-hidden">
+<img alt="Nate Special Fry Chicken" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Golden crispy fried chicken pieces garnished with curry leaves and red chilies on a rustic wooden platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPANDRFY-kzdB1Ju3HwGC63_ehyHMaDnUOG3EcKcU9tfLcTgS3P2Gfu14dqC4keEEt66hZ9cVXHANbJwdjhH4piNY7-vnpxsJAJzV_F205zwM41qaiZLsHDRwsgKI9oFxtvroNTT7izktK9et_Xn3qBATKXDsdDSam8StAfUIJP5lKnEb5iQBQ01kLCBRidjijBaxQkBl8lKSFYJLTVEVoqnHZ_hLDl6e8IT9x3fVkk0G8OguqHfRUHoU6uuN4z66RlL2g4TdMi-1B"/>
+</div>
+<div class="w-full sm:w-1/2 p-8 flex flex-col justify-center">
+<div class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Bestseller</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Nate Special Fry Chicken</h3>
+<div class="text-2xl font-black text-primary mb-6">₹140 <span class="text-xs font-normal text-on-surface-variant">/ Half Plate</span></div>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="https://wa.me/9511179974?text=I'd like to order Fry Chicken">
+                            Add to Cart <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Starter Item 2 -->
+<div class="flex flex-col sm:flex-row bg-surface-container-lowest rounded-[2.5rem] overflow-hidden editorial-shadow group">
+<div class="w-full sm:w-1/2 h-64 sm:h-auto overflow-hidden">
+<img alt="Spicy Masala Wings" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Spicy glazed chicken wings stacked on a black plate with fresh green lime and herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrMdE_zlrFhl_bQKJjtpG9JI5aF8uOiRIkkGM65bYULL1USDcB_y6Q_IoeeJb43_TUR3PTX_KZ29M7Q_t-m2H2IiWTF6fiM6YMcKMpDVpWK6rLQLbFYoLcGciuIeaO8PT-wf0_3BH2eHnLut3V0C_6MQooqK8c8qAcfb1-z5VwJkbbfrINWEcmnkGKXSrRBwTv2k_A60DhtXNxvU6KPb4YBgayHAc82eIupQzLadrJJUhRL4Lr5fp2RW7hhoBv6HxFPyg9o1WBmw5x"/>
+</div>
+<div class="w-full sm:w-1/2 p-8 flex flex-col justify-center">
+<div class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Spicy</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Spicy Masala Wings</h3>
+<div class="text-2xl font-black text-primary mb-6">₹120 <span class="text-xs font-normal text-on-surface-variant">/ 6 Pieces</span></div>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="https://wa.me/9511179974?text=I'd like to order Masala Wings">
+                            Add to Cart <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Category: Drinks & Sides -->
+<section class="max-w-7xl mx-auto px-6">
+<div class="flex items-center gap-4 mb-12">
+<div class="flex-grow h-[1px] bg-outline-variant/30"></div>
+<h2 class="text-4xl font-black font-headline text-on-surface tracking-tight">Drinks &amp; Sides</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Side 1 -->
+<div class="text-center group">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden mb-4 border-4 border-surface-container-lowest shadow-xl">
+<img alt="Classic Raita" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Small bowl of creamy white raita with chopped cucumbers and a dash of red chili powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIu8iNsb_Bj4BKFlGtnoI8M-QnGYVOCBOqzAuKJDvxdO4qpe-6zOrrnIgs8Crb8VZJkn_4wcxIGTce7uI_5vutAW1eIHfCstCjqNVDjvo82Zz-nRfuAFEY6XuCfv0ycoaXrE8uYt-AUYoYczmjByxvGnmbRt1CJs7C5-dRC1i2KmMS4nzTNh7PykMLHhtupyMFwN5Lmocxtfq25sXs9sX9YB5sJ5TSvioiMChB2RtYcPDB64R2b5I3OywxOz5g9op5CSsL6t8VjAUe"/>
+</div>
+<h4 class="font-bold text-lg">Creamy Raita</h4>
+<p class="text-primary font-bold">₹20</p>
+</div>
+<!-- Side 2 -->
+<div class="text-center group">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden mb-4 border-4 border-surface-container-lowest shadow-xl">
+<img alt="Lime Cooler" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Fresh lime soda with mint leaves and ice cubes in a tall frosted glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Yj2xrMy2GsrjW9_cqpuV6L6lfhFicr1yTHLM5NYok2JA-BH41xjxmKzb-wU8wrgSibXLMuWbBRNTVKFUN0pJLb5qJTi4ixh2fBPfe0h7-QYVwWy89wj47aoevZ3enEwJ3vt-O2ybTm8zwM8_tXieWDYdBM9qrQa5G-OlouhdL-sUGZI1NtMDdKGfk8jK6gltNHMsKfyKNri7BSD9NEWGkw-vqCwjqkb5sBA1ihE5wg-zeLDG83lJuMO2We0HtIFSOOd3LXP42Tvw"/>
+</div>
+<h4 class="font-bold text-lg">Fresh Cooler</h4>
+<p class="text-primary font-bold">₹30</p>
+</div>
+<!-- Side 3 -->
+<div class="text-center group">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden mb-4 border-4 border-surface-container-lowest shadow-xl">
+<img alt="Onion Salad" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Thinly sliced red onions with green chilies and lemon wedges on a small plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi1uUL43eeS7c4vNmKjAT68MhiZvns-xGx0SzF8gIHvYXW-kuZHa2uu7W-l80aVSh_DTYlu8Ncb_Q2kq1yyEgm7Id_g_OiGAV9GlxGBdhKH3Lp_chCH-j3wAhu6fl51NasnXboNSwMQ7y1kg9UfER7aymVlgLqQ4SDWzsaFB3q5XtbxQImCm8rVkt5vlbcPlKVZj8t1QZHzOv6YOLcaKq_3kowFdMvz0s8xhKvUZ2gKg5nLOEUtZy_FlyepNHa-EIE6TjTDnfx0KJv"/>
+</div>
+<h4 class="font-bold text-lg">Masala Salad</h4>
+<p class="text-primary font-bold">₹15</p>
+</div>
+<!-- Side 4 -->
+<div class="text-center group">
+<div class="aspect-square bg-surface-container-high rounded-full overflow-hidden mb-4 border-4 border-surface-container-lowest shadow-xl">
+<img alt="Soft Drinks" class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="Assorted chilled glass bottles of soft drinks on crushed ice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlPOf-vMqphF2Xz-BtNNCO38pROjFjpuowmzPVJKQlXmNoLCTQPUfkRZgmExqKBC5uBU6cS-84zW773XGpkX1gfQwreVQ9yP70XIRRY64N3_IsWXy2KeMtcS1-YqYEI9OMMKq1WLeYRk0aE9N6cWKpfOHeWE4RawPr13BGhu2yO6THdonlFGaVqEKRc5mOgE46NmktE0jO4FEzOWUjYyc3QTGoUA6Br4iBbr6_AwsrSgvPHqJzFo6kqjjbYHflC-joypdanWcVFwNJ"/>
+</div>
+<h4 class="font-bold text-lg">Soft Drinks</h4>
+<p class="text-primary font-bold">MRP</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-[#fe9832]/10 w-full pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-bold text-[#f9f6f5] font-headline">नेटे भाई बिरयानी कॉर्नर</div>
+<p class="text-[#f9f6f5]/60 text-sm leading-relaxed font-body">Authentic flavors from Gorakhpur, serving artisanal biriyani with passion and tradition since 2024.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-3">
+<h5 class="text-[#fe9832] font-bold text-xs uppercase tracking-widest mb-2">Explore</h5>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors text-sm" href="#">About Us</a>
+<a class="text-[#fe9832] transition-colors text-sm" href="#">Menu</a>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors text-sm" href="#">Book a Table</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="text-[#fe9832] font-bold text-xs uppercase tracking-widest mb-2">Legal</h5>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-[#fe9832] font-bold text-xs uppercase tracking-widest">Connect with Us</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-[#f9f6f5]/20 flex items-center justify-center text-[#f9f6f5]/60 hover:border-[#fe9832] hover:text-[#fe9832] transition-all" href="#">
+<span class="material-symbols-outlined text-sm">call</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#f9f6f5]/20 flex items-center justify-center text-[#f9f6f5]/60 hover:border-[#fe9832] hover:text-[#fe9832] transition-all" href="#">
+<span class="material-symbols-outlined text-sm">location_on</span>
+</a>
+</div>
+<p class="text-xs text-[#f9f6f5]/40">Pipiganj, Gorakhpur, Uttar Pradesh.</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#f9f6f5]/5 text-center">
+<p class="text-[#f9f6f5]/40 text-xs font-body tracking-wide">© 2024 Nate Bhai Biriyani Corner. Pipiganj, Gorakhpur.</p>
+</div>
+</footer>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-[#f9f6f5]/90 backdrop-blur-lg border-t border-[#8b4b00]/5 h-16 flex justify-around items-center px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#2f2f2e] py-2 px-4" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#fe9832] text-[#f9f6f5] rounded-xl py-2 px-4" href="#">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2f2f2e] py-2 px-4" href="#">
+<span class="material-symbols-outlined">event_seat</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Book</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2f2f2e] py-2 px-4" href="tel:9511179974">
+<span class="material-symbols-outlined">call</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Call</span>
+</a>
+</nav>
+</body></html>

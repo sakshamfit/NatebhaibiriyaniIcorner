@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="hi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#664b00",
+                    "primary-dim": "#7a4100",
+                    "surface-container-low": "#f3f0ef",
+                    "tertiary-container": "#f69a62",
+                    "surface-tint": "#8b4b00",
+                    "tertiary-fixed-dim": "#e68d56",
+                    "surface-container-high": "#e4e2e1",
+                    "on-secondary": "#fff1db",
+                    "on-surface-variant": "#5c5b5b",
+                    "on-primary-fixed": "#291200",
+                    "error-container": "#f95630",
+                    "on-error": "#ffefec",
+                    "on-secondary-container": "#5c4400",
+                    "surface-container": "#eae7e7",
+                    "on-secondary-fixed": "#443100",
+                    "on-error-container": "#520c00",
+                    "tertiary": "#8f4816",
+                    "surface-variant": "#dfdcdc",
+                    "error-dim": "#b92902",
+                    "outline": "#787676",
+                    "primary-container": "#fe9832",
+                    "error": "#b02500",
+                    "tertiary-fixed": "#f69a62",
+                    "on-tertiary-fixed-variant": "#602900",
+                    "secondary-fixed-dim": "#f7ba00",
+                    "on-background": "#2f2f2e",
+                    "on-primary": "#fff0e6",
+                    "surface-dim": "#d6d4d3",
+                    "inverse-on-surface": "#9e9c9c",
+                    "secondary-fixed": "#ffca4d",
+                    "tertiary-dim": "#803d0a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#674c00",
+                    "primary-fixed": "#fe9832",
+                    "on-primary-fixed-variant": "#592e00",
+                    "secondary": "#755700",
+                    "on-tertiary-container": "#532300",
+                    "on-tertiary-fixed": "#2d0f00",
+                    "surface": "#f9f6f5",
+                    "on-surface": "#2f2f2e",
+                    "secondary-container": "#ffca4d",
+                    "on-tertiary": "#fff0e9",
+                    "surface-bright": "#f9f6f5",
+                    "background": "#f9f6f5",
+                    "surface-container-highest": "#dfdcdc",
+                    "inverse-surface": "#0e0e0e",
+                    "primary": "#8b4b00",
+                    "outline-variant": "#afadac",
+                    "primary-fixed-dim": "#ed8b24",
+                    "on-primary-container": "#4d2700",
+                    "inverse-primary": "#fe9832"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Be Vietnam Pro"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .spice-dust {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Cfilter id='noiseFilter'%3%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3%3C/filter%3%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3%3C/svg%3%3E");
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f6f5]/80 dark:bg-[#0e0e0e]/80 backdrop-blur-xl shadow-[0_12px_40px_-15px_rgba(47,47,46,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-black text-[#8b4b00] dark:text-[#fe9832] font-headline tracking-tight">
+                नेटे भाई बिरयानी कॉर्नर
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#2f2f2e] dark:text-[#f9f6f5] opacity-70 hover:text-[#8b4b00] transition-colors font-headline font-bold" href="#">Home</a>
+<a class="text-[#2f2f2e] dark:text-[#f9f6f5] opacity-70 hover:text-[#8b4b00] transition-colors font-headline font-bold" href="#">Menu</a>
+<a class="text-[#8b4b00] dark:text-[#fe9832] border-b-2 border-[#8b4b00] pb-1 font-headline font-bold" href="#">Booking</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-xl font-headline font-bold active:scale-95 transition-transform">Order Now</button>
+<span class="material-symbols-outlined text-primary cursor-pointer">shopping_cart</span>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20 relative overflow-hidden">
+<div class="spice-dust absolute inset-0 pointer-events-none"></div>
+<!-- Hero Section / Header -->
+<section class="max-w-7xl mx-auto px-6 mb-16 relative">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-label uppercase tracking-widest mb-4">Reservations</span>
+<h1 class="text-5xl md:text-7xl font-headline font-black text-on-surface leading-tight mb-6 -tracking-tighter">
+                        Experience the <span class="text-primary italic">Soul</span> of Awadh.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-8 leading-relaxed">
+                        Reserve your table at नेटे भाई बिरयानी कॉर्नर and immerse yourself in the authentic flavors of slow-cooked perfection.
+                    </p>
+</div>
+<div class="relative h-[400px] lg:h-[500px]">
+<!-- Floating Biryani Image -->
+<div class="absolute inset-0 bg-surface-container-low rounded-xl overflow-hidden shadow-2xl rotate-3 translate-x-4">
+<img class="w-full h-full object-cover" data-alt="Close-up of authentic copper pot biryani with steam rising, garnished with saffron and fried onions on a dark wood table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKFyD77Fyvv6GPT-2flynu36EDSHmWydMVVmgB8WRbCL_BRXYPKMHO9erXBTKtC0eZofsm889CZMzBSRjttp1h2QIFEHGNbQtK-sm_8D1gdZUPTs1FITPPpSSMfrNTfs0sqiaiMcpAf38gX_ezKhcq6Zwyg7nYBrtMfRYjrBqyFPw6kA-Q-QdGod_j7iugw2dDaL_3PpjrImXE1veybkUyBSsdZcouY6a79LNq9lvaQ3pIJAiT8GkVkuWxktY-WDmByCB5Bpay4ZAd"/>
+</div>
+<div class="absolute top-1/2 -left-8 -translate-y-1/2 w-48 h-48 bg-primary rounded-xl -rotate-6 flex items-center justify-center p-4 shadow-xl">
+<p class="font-headline font-extrabold text-on-primary text-center leading-tight">Authentic Pipiganj Taste</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content: Bento Grid Style -->
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Booking Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_40px_80px_-30px_rgba(139,75,0,0.1)] relative border border-outline-variant/10">
+<h2 class="text-3xl font-headline font-bold text-primary mb-8">Book Your Seat</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-wider text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container transition-all" placeholder="e.g. Rahul Sharma" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-wider text-on-surface-variant ml-1">Number of Guests</label>
+<select class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container transition-all">
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>4 Guests</option>
+<option>6+ Guests</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-wider text-on-surface-variant ml-1">Reservation Date</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container transition-all" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-wider text-on-surface-variant ml-1">Select Time</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary-container transition-all" type="time"/>
+</div>
+</div>
+<button class="w-full bg-primary py-5 rounded-xl text-on-primary font-headline font-bold text-lg shadow-lg hover:shadow-primary/20 hover:scale-[1.01] transition-all" type="submit">Confirm Reservation</button>
+</form>
+</div>
+<!-- Sidebar Info Cluster -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Contact & Call Card -->
+<div class="bg-primary-container p-8 rounded-xl text-on-primary-container shadow-xl">
+<h3 class="text-2xl font-headline font-bold mb-4">Get in Touch</h3>
+<div class="text-4xl font-headline font-black mb-6 tracking-tight">9511179974</div>
+<div class="flex flex-wrap gap-4">
+<a class="flex-1 bg-on-primary-container text-surface px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2" href="tel:9511179974">
+<span class="material-symbols-outlined">call</span> Call to Order
+                        </a>
+<button class="flex-1 bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span> WhatsApp
+                        </button>
+</div>
+</div>
+<!-- Opening Hours Card -->
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-headline font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">schedule</span> Opening Hours
+                    </h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
+<span class="font-medium">Lunch Service</span>
+<span class="text-on-surface-variant">11:00 AM — 04:00 PM</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-medium">Dinner Service</span>
+<span class="text-on-surface-variant">07:00 PM — 11:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Small Location Hint -->
+<div class="bg-white p-6 rounded-xl shadow-sm border border-outline-variant/10 flex items-start gap-4">
+<div class="bg-secondary-fixed text-on-secondary-fixed p-3 rounded-lg">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold">Pipiganj, Gorakhpur</h4>
+<p class="text-sm text-on-surface-variant">Uttar Pradesh - 273165</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us: Map Section -->
+<section class="max-w-7xl mx-auto px-6 mt-20">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-headline font-black text-on-surface mb-2">Visit Us</h2>
+<div class="h-1 w-20 bg-primary-container mx-auto"></div>
+</div>
+<div class="relative h-[500px] w-full rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest group">
+<div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
+<!-- Stylized Map Placeholder -->
+<img class="w-full h-full object-cover" data-alt="Professional architectural photography of a vibrant urban map with a glowing red pin at Pipiganj Gorakhpur, soft depth of field" data-location="Pipiganj, Gorakhpur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8bfnVJ7Z1_8GUZlcEMc7KhFO6_4zF3eI2IDJygZvKdHZeJPAYgfKgCqeVmrtatSwKNCe7aQyLVs0zoNq1Aqp91n328Au3xXPq954lccVxaNpYyTbXrNwvjhdEDtIfDiQdiSwXcD_h-EdBfZf_ZB1Zhuo2PmmlTjAwc9sYEtwJtx7wtMCTf81rIJ8W8DmRFbeleuCd9QOL5BcmkzUr9ssnMACPkuRKlbRkjIo_j-3a7QrnRvmAlhRTRIgDqxx0_-RRAg2txrlnGVNs"/>
+<!-- Map Overlay Info -->
+<div class="absolute bottom-8 left-8 z-20 bg-surface/90 backdrop-blur-md p-8 rounded-xl max-w-sm shadow-xl border border-white/20">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">नेटे भाई बिरयानी कॉर्नर</h3>
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                        Located in the heart of Pipiganj. Look for the aroma of fresh spices!
+                    </p>
+<a class="text-primary font-bold flex items-center gap-1 group" href="#">
+                        Get Directions <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full pt-16 pb-8 border-t border-[#fe9832]/10">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#f9f6f5]">नेटे भाई बिरयानी कॉर्नर</div>
+<p class="text-[#f9f6f5]/60 text-sm leading-relaxed">
+                    Celebrating the culinary heritage of Awadh in the heart of Pipiganj. Every grain of rice tells a story of tradition.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-[#fe9832] font-label uppercase tracking-widest text-xs mb-2">Quick Links</h4>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors hover:translate-x-1 transition-transform text-sm" href="#">About Us</a>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors hover:translate-x-1 transition-transform text-sm" href="#">Menu</a>
+<a class="text-[#fe9832] text-sm" href="#">Book a Table</a>
+<a class="text-[#f9f6f5]/60 hover:text-[#fe9832] transition-colors hover:translate-x-1 transition-transform text-sm" href="#">Privacy Policy</a>
+</div>
+<div class="space-y-6">
+<h4 class="text-[#fe9832] font-label uppercase tracking-widest text-xs mb-2">Social</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#fe9832]/20 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[#fe9832]">social_leaderboard</span>
+</div>
+<div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#fe9832]/20 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[#fe9832]">camera</span>
+</div>
+</div>
+<p class="text-[#f9f6f5]/60 text-sm">Follow us for daily specials and chef's stories.</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-[#f9f6f5]/40 text-xs">
+            © 2024 Nate Bhai Biriyani Corner. Pipiganj, Gorakhpur.
+        </div>
+</footer>
+<!-- Bottom Nav for Mobile -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-[#f9f6f5]/90 dark:bg-[#0e0e0e]/90 backdrop-blur-lg border-t border-[#8b4b00]/5 shadow-[0_-10px_30px_rgba(0,0,0,0.05)]">
+<div class="flex justify-around items-center px-4 pb-safe h-16">
+<div class="flex flex-col items-center justify-center text-[#2f2f2e] dark:text-[#f9f6f5] py-2 px-4 hover:bg-[#fe9832]/10 transition-all">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2f2f2e] dark:text-[#f9f6f5] py-2 px-4 hover:bg-[#fe9832]/10 transition-all">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#fe9832] text-[#f9f6f5] rounded-xl py-2 px-4 active:scale-90 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_seat</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Book</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2f2f2e] dark:text-[#f9f6f5] py-2 px-4 hover:bg-[#fe9832]/10 transition-all">
+<span class="material-symbols-outlined">call</span>
+<span class="text-[10px] font-medium font-body uppercase tracking-widest mt-1">Call</span>
+</div>
+</div>
+</nav>
+</body></html>
